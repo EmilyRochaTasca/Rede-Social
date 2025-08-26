@@ -1,0 +1,91 @@
+/* Body */
+body {
+  background-color: #fafafa;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #262626;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card-header img {
+  border: 2px solid #ff8501;
+  padding: 2px;
+}
+
+/* Botões de ação */
+.card-body .btn-link {
+  color: #262626;
+}
+
+.card-body .btn-link.text-danger {
+  color: #ed4956;
+}
+
+.card-body .btn-link:hover {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.1);
+}
+
+footer i {
+  color: #262626;
+}
+
+footer i:hover {
+  color: #1877f2;
+  cursor: pointer;
+}
+
+/* Formulário Novo Post */
+#usuarioInput,
+#textoInput,
+#imgInput {
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+#usuarioInput:focus,
+#textoInput:focus,
+#imgInput:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+}
+
+#postBtn {
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.2s;
+}
+
+#postBtn:hover {
+  background-color: #155db2;
+}
+
+.container > .card h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #262626;
+}

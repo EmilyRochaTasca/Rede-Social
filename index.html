@@ -3,54 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Rede Social</title>
-  <link rel="stylesheet" href="style.css">
+  <title>RedeFamilia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- Header / Navegação -->
-  <header>
-    <div class="logo">MinhaRede</div>
-    <nav>
-      <a href="#">Feed</a>
-      <a href="#">Perfil</a>
-      <a href="#">Mensagens</a>
-      <a href="#">Sair</a>
-    </nav>
-  </header>
+<body class="bg-light">
 
-  <!-- Seção de postagem -->
-  <section class="novo-post">
-    <textarea placeholder="O que você está pensando?"></textarea>
-    <button>Postar</button>
-  </section>
+  <!-- Header -->
+  <nav class="navbar navbar-light bg-white border-bottom fixed-top">
+    <div class="container justify-content-center">
+      <span class="navbar-brand mb-0 h1">RedeFamilia</span>
+      <div class="position-absolute end-0 me-3">
+        <i class="bi bi-send fs-4"></i>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Feed de posts -->
-  <section class="feed">
-    <article class="post">
-      <div class="usuario">
-        <img src="assets/images/avatar.png" alt="Avatar">
-        <span>Usuário1</span>
-      </div>
-      <p>Este é o meu primeiro post!</p>
-      <div class="acoes">
-        <button>Curtir</button>
-        <button>Comentar</button>
-      </div>
-    </article>
+  <!-- Espaço para header -->
+  <div style="height: 60px;"></div>
 
-    <article class="post">
-      <div class="usuario">
-        <img src="assets/images/avatar.png" alt="Avatar">
-        <span>Usuário2</span>
+  <!-- Novo Post -->
+  <div class="container mt-3">
+    <div class="card mb-4 p-3">
+      <h5>Novo Post</h5>
+      <div class="mb-2">
+        <input type="text" id="usuarioInput" class="form-control mb-2" placeholder="Seu nome">
+        <textarea id="textoInput" class="form-control mb-2" placeholder="O que você está pensando?"></textarea>
+        <input type="text" id="imgInput" class="form-control mb-2" placeholder="URL da imagem">
       </div>
-      <p>Compartilhando algo interessante...</p>
-      <div class="acoes">
-        <button>Curtir</button>
-        <button>Comentar</button>
-      </div>
-    </article>
-  </section>
+      <button id="postBtn" class="btn btn-primary">Postar</button>
+    </div>
+  </div>
 
+  <!-- Feed -->
+  <div class="container mt-3" id="feed">
+    <!-- Exemplo de posts iniciais -->
+    <div class="card mb-4">
+      <div class="card-header d-flex align-items-center">
+        <img src="assets/images/avatar.png" alt="Usuário" class="rounded-circle me-2" width="40">
+        <strong>usuario1</strong>
+      </div>
+      <img src="assets/images/post1.jpg" class="card-img-top" alt="Post">
+      <div class="card-body">
+        <div class="mb-2">
+          <button class="btn btn-link p-0 me-2 text-danger"><i class="bi bi-heart-fill"></i></button>
+          <button class="btn btn-link p-0 me-2"><i class="bi bi-chat"></i></button>
+        </div>
+        <p class="card-text"><strong>usuario1:</strong> Foto incrível!</p>
+        <small class="text-muted">100 curtidas</small>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header d-flex align-items-center">
+        <img src="assets/images/avatar.png" alt="Usuário" class="rounded-circle me-2" width="40">
+        <strong>usuario2</strong>
+      </div>
+      <img src="assets/images/post2.jpg" class="card-img-top" alt="Post">
+      <div class="card-body">
+        <div class="mb-2">
+          <button class="btn btn-link p-0 me-2 text-danger"><i class="bi bi-heart-fill"></i></button>
+          <button class="btn btn-link p-0 me-2"><i class="bi bi-chat"></i></button>
+        </div>
+        <p class="card-text"><strong>usuario2:</strong> Curtindo o dia!</p>
+        <small class="text-muted">250 curtidas</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-top fixed-bottom">
+    <div class="d-flex justify-content-around py-2">
+      <i class="bi bi-house fs-4"></i>
+      <i class="bi bi-search fs-4"></i>
+      <i class="bi bi-plus-square fs-4"></i>
+      <i class="bi bi-heart fs-4"></i>
+      <i class="bi bi-person fs-4"></i>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
