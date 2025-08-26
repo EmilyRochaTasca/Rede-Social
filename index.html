@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Rede Social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navegação -->
+  <header>
+    <div class="logo">MinhaRede</div>
+    <nav>
+      <a href="#">Feed</a>
+      <a href="#">Perfil</a>
+      <a href="#">Mensagens</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+
+  <!-- Seção de postagem -->
+  <section class="novo-post">
+    <textarea placeholder="O que você está pensando?"></textarea>
+    <button>Postar</button>
+  </section>
+
+  <!-- Feed de posts -->
+  <section class="feed">
+    <article class="post">
+      <div class="usuario">
+        <img src="assets/images/avatar.png" alt="Avatar">
+        <span>Usuário1</span>
+      </div>
+      <p>Este é o meu primeiro post!</p>
+      <div class="acoes">
+        <button>Curtir</button>
+        <button>Comentar</button>
+      </div>
+    </article>
+
+    <article class="post">
+      <div class="usuario">
+        <img src="assets/images/avatar.png" alt="Avatar">
+        <span>Usuário2</span>
+      </div>
+      <p>Compartilhando algo interessante...</p>
+      <div class="acoes">
+        <button>Curtir</button>
+        <button>Comentar</button>
+      </div>
+    </article>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
